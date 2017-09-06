@@ -1,11 +1,8 @@
+#TREEHOUSE PROJECTS :: #age calculator
 
-#TREEHOUSE PROJECTS
-
-#age calculator
 # Step 1
 # Ask the user for their name and the year they were born.
 currentYear = 2017
-
 def getName():
     name = input('Please enter your name: ')
     getYear(name)
@@ -19,7 +16,6 @@ def getYear(name):
     except ValueError:
         print('Hey, '+str(name)+', Please enter a number for your birthyear. (ie. 1983)')
         getYear(yearName)
-
 
 # Step 2
 # Calculate and print the year they'll turn 25, 50, 75, and 100.
@@ -50,6 +46,5 @@ def calcs(name,year):
     if turn100 < currentYear:
         print('Your over 100... and using a computer... thats commendable.')
 
-
-
+#start it all
 getName()
